@@ -26,11 +26,11 @@ jobs:
         run: npm run lint
       - name: Test 🧪
         run: npm run test:ci
-      - name: Build 🏭
+      - name: Build 🚧
         run: npm run build:ci
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: dist/test-ci # The folder the action should deploy.
+          branch: gh-pages
+          folder: dist/test-ci
           token: ${{ secrets.ACCESS_TOKEN }}
