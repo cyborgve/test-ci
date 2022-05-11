@@ -13,18 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: Setup Node
+      - name: Setup Node 🔧
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
           cache: 'npm'
-      - name: Install dependecies
+      - name: Install dependecies 🧱
         run: npm ci
-      - name: Lint code
+      - name: Lint 🌡️
         run: npm run lint
-      - name: Test
+      - name: Test 🧪
         run: npm run test:ci
-      - name: Build
+      - name: Build 🏭
         run: npm run build:ci
