@@ -28,3 +28,9 @@ jobs:
         run: npm run test:ci
       - name: Build 🏭
         run: npm run build:ci
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: dist/test-ci
+          token: ${{ secrets.ACCESS_TOKEN }}
