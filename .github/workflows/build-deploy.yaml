@@ -32,5 +32,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           BRANCH: gh-pages
-          FOLDER: dist/test-ci
+          FOLDER: test-ci
           TOKEN: ${{ secrets.ACCESS_TOKEN }}
