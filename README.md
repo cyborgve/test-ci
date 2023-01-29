@@ -1,24 +1,27 @@
-# Angular Material TailwindCSS
+# AngularMaterialTailwindcss
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
 # Includes WorkSet
 
-- Angular 13.3.0
-- Angular Material 13.3.5
-- TailwindCSS 3.0.24
-- ESLint 8.12.0
-- JSON Server 0.17.0
-- Concurrently 7.1.0
-- Husky 7.0.4
+- Angular 15.1.0
+- Angular Material 15.1.2
+- TailwindCSS 3.2.4
+- ESLint 8.31.0
+- Husky 8.0.3
+- Commit Lint CLI 17.4.0
+- Prettier 2.8.3
+- JSON-Server 0.17.1
+- Concurrently 7.6.0
+- Faker-JS 7.6.0
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Development server with json-server backend
+## Development server with JSON-Server backend and faker data
 
-Run `npm run dev:json` for dev server with json-server backend only for development. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files, or `http://localhost:8080/api` for to view the development backend rules and resources.
+Run `npn run dev:json` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files, for a backend json-server. Navigate to `http://localhost:4200/api`. The application will automatically reload if you change any of the source files
 
 ## Code scaffolding
 

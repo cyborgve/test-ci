@@ -14,7 +14,7 @@ module.exports = () => {
     data.users.push({
       username: faker.internet.userName(),
       name: faker.name.firstName() + ' ' + faker.name.lastName(),
-      role: faker.helpers.arrayElement(['ADMIN', 'USER']),
+      role: faker.helpers.arrayElement(['ADMINISTRATOR', 'USER']),
       email: faker.internet.email(),
       status: faker.helpers.arrayElement(['ENABLED', 'DISABLED']),
       created: faker.date.past().getTime(),

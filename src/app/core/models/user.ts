@@ -1,10 +1,11 @@
-import { Status } from '@core/enums/status';
-import { Role } from '@core/enums/role';
+import { Status } from './../enums/status';
+import { Rols } from '../enums/rols';
+
 export interface User {
-  username: string;
-  name: string;
+  username: String;
+  name: String;
+  role: Rols;
   email: string;
-  role: Role;
   status: Status;
   created: number;
   modified: number;

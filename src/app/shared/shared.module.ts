@@ -1,5 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -53,8 +56,6 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { CdkTreeModule } from '@angular/cdk/tree';
 import { MatNativeDateModule } from '@angular/material/core';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
 
 const materials = [
   MatAutocompleteModule,
@@ -111,11 +112,17 @@ const materials = [
   MatNativeDateModule,
 ];
 
-const sharedComponents = [PageNotFoundComponent, ActionButtonsComponent];
+const sharedModules = [HttpClientModule, ReactiveFormsModule, FormsModule];
+
+//const sharedComponents = [];
+
+//const sharedPipes = [];
 
 @NgModule({
-  declarations: [...sharedComponents],
-  imports: [CommonModule, ...materials],
-  exports: [...materials, ...sharedComponents],
+  //declarations: [...sharedComponents, ...sharedPipes],
+  declarations: [],
+  imports: [CommonModule, ...materials, ...sharedModules],
+  //exports: [...materials, ...sharedModules, ...sharedComponents, ...sharedPipes],
+  exports: [...materials, ...sharedModules],
 })
 export class SharedModule {}
