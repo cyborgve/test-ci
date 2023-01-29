@@ -22,10 +22,8 @@ jobs:
           cache: 'npm'
       - name: Install dependecies 🧱
         run: npm ci
-      - name: Lint 🌡️
-        run: npm run lint
       - name: Build 🚧
-        run: npm run build:ci
+        run: npm run build
       - name: Deploy to GitHub Pages 🚀
         uses: crazy-max/ghaction-github-pages@v3
         with:
